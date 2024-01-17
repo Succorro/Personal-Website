@@ -1,0 +1,65 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.logo {
+  width: 2rem;
+  padding-left: 0.75rem;
+}
+
+
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.projects-section,
+.about-section,
+.contact-section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-div {
+  display: flex;
+}
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.project-card img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+h1 {
+  color: cornflowerblue;
+  
+}
