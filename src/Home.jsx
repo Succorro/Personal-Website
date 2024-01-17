@@ -26,7 +26,7 @@ const Home = () => {
       <header className="m-10">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-500">
           Hello! My name is <span className="text-cornflowerblue">Steven Gutierrez, </span> 
-          I am a <span className="text-cornflowerblue">Software Engineer</span> who enjoys working on new and innovative technology. 
+          I am a <span className="text-cornflowerblue">Software Developer</span> who enjoys working on new and innovative technology. 
           Actively seeking employment.
         </h1>
         <p className="text-cornflowerblue m-10 font-bold text-2xl">Flatiron School Alumni</p>
@@ -64,7 +64,6 @@ const Home = () => {
       </section>
 
       <section className="bg-gray-800 p-10 flex flex-col items-center mb-20 rounded-3xl">
-        <h2 className='text-2xl font-bold text-gray-200 mb-10'>About Me</h2>
         <p className={pStyle}>
           I&apos;m a passionate developer, who loves turning ideas into reality through coding.
         </p>
@@ -74,7 +73,7 @@ const Home = () => {
           ))}
         </p>
         <p className={pStyle}>
-          Explore my projects to get a glimpse of my skills and personality with the <span className='text-cornflowerblue'>GitHub</span> link below.
+          Explore my projects to get a glimpse of my skills and personality with the <span className='text-purple'>GitHub</span> link below.
         </p>
         <a href="https://github.com/Succorro" rel="noreferrer" target="_blank">
           <img className='w-10' src="/github.png" alt="Github" />

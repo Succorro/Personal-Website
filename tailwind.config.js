@@ -11,6 +11,7 @@ export default {
       colors: {
         cornflowerblue: "#6495ed",
         background: "#cfcece",
+        purple: "#5c6bc0",
       },
     },
   },
