@@ -16,7 +16,7 @@ const Home = () => {
   const pStyle = 'text-2xl font-bold text-gray-400 p-5';
 
   return (
-    <div id='home' className="p-3 bg-background">
+    <div id='home' className="p-3" style={{backgroundImage: 'url(/Trigram.png)',backgroundSize: 'contain'}}>
       <header className="m-10">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-500">
           As a <span className="text-cornflowerblue">Software Developer</span> who enjoys working on new and innovative technology, I am always learning. 

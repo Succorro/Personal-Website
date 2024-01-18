@@ -12,6 +12,8 @@ export default {
         cornflowerblue: "#6495ed",
         background: "#cfcece",
         purple: "#5c6bc0",
+        green: "#88EBAC",
+        orange: "#F4930E",
       },
     },
   },
