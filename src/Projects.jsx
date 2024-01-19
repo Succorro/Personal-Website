@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div id='projects' className="p-3">
       <header className="m-10">
-        <h1 className="text-2xl sm:text-3xl font-bold text-gray-500">My Projects</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-500">Projects</h1>
       </header>
       <section className='not-prose'>
         <div className='flex flex-wrap m-0 justify-center '>

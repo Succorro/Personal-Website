@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom";
-
+import {Navbar,  NavbarMenuToggle } from "@nextui-org/react";
 import { useState } from "react";
 
 function Nav() {
-  const [menuClick, setMenuClick] = useState("sm:hidden hidden")
-
-  function handleMenuClick (){
-    if(menuClick === "sm:hidden hidden") {
-      setMenuClick('sm:hidden')
-    } else {
-      setMenuClick('sm:hidden hidden')
-    }
-
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <nav className="bg-cornflowerblue pt-1 p-1 m-0">
       <div className=" px-2 sm:px-6 lg:px-8">
@@ -33,31 +24,20 @@ function Nav() {
                 <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold" to="/resume">Resume</Link>
               </div>
             </div>
-            {/* <div className="flex flex-shrink-0 items-center">
-              <Link to="/" className="flex">
-                <img className="h-10 w-auto" src="/code.png" alt="code" />
-              </Link>
-            </div> */}
           </div>
           
-          <div className=" inset-y-0 left-0 flex items-center sm:hidden">
-            <button onClick={handleMenuClick} type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span className="absolute -inset-0.5"></span>
-              <span className="sr-only">Open main menu</span>
-              <svg className="block h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path d="M6 18L18 6M6 6l12 12" />
-              </svg> 
-            </button>
-          </div>
-
+          
+          <Navbar onMenuOpenChange={setIsMenuOpen} className="w-1/8 bg-cornflowerblue mr-0 hover:outline-none hover:border-double focus:outline-none focus:border-none">
+            <NavbarMenuToggle
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              className="sm:hidden hover:outline-none hover:border-none focus:outline-none focus:border-none"
+            />
+          </Navbar>
           
         </div>
       </div>
 
-      <div className={menuClick} id="mobile-menu">
+      <div className={isMenuOpen ? 'sm:hidden': 'sm:hidden hidden'} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
         <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold" to='/projects'>Projects</Link>
         <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold" to="/resume">Resume</Link>
