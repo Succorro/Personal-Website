@@ -1,36 +1,37 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
-import { Card, CardHeader, Image } from '@nextui-org/react';
+import { Card,CardBody, Image } from '@nextui-org/react';
 
 function PinnedProjects({project}) {
     const {html_url, description} = project
   return (
     <div className='w-full md:w-1/2 lg:w-1/3'>
-              <div className='mb-10 overflow-hidden rounded-xl bg-background dark:bg-dark-2 py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-14'>
-                <Card isPressable className="col-span-12 bg-background sm:col-span-4">
-                  <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                    <h4 className="text-cornflowerblue font-bold text-xl">{project.name}</h4>
-                  </CardHeader>
-                  <Image
-                    removeWrapper
-                    alt="Card background"
-                    className="z-0 w-full h-full bg-background"
-                    src="/code.png" 
-                  />
-                  <div className="p-4">
-                    <p className="text-gray-500">{description}</p>
+        <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0'>
+        <Card isPressable className="w-full md:w-4/5 lg:w-3/5 max-h-[400px] space-y-5 p-6 mb-10">
+            <CardBody>
+                <Image
+            removeWrapper
+            alt="Card background"
+            className="z-0 w-full bg-background"
+            src="/code.png" 
+            />
+            </CardBody>
+            
+            <h4 className="text-cornflowerblue font-bold text-xl">{project.name}</h4>
+            <div className="p-4">
+                <p className="text-gray-500">{description}</p>
                     <a
-                      href={html_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-cornflowerblue mt-4 inline-block underline"
+                        href={html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-cornflowerblue mt-0 inline-block underline"
                     >
-                      View on GitHub
+                    View on GitHub
                     </a>
-                  </div>
-                </Card>
-              </div>
             </div>
+        </Card>
+        </div>
+    </div>
   )
 }
 
