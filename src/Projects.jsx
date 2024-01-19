@@ -4,7 +4,7 @@ import ProjectSkeleton from './ProjectSkeleton';
 
 const Projects = () => {
   const [projects, setProjects] = useState(null);
-console.log(projects)
+  
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -18,7 +18,6 @@ console.log(projects)
 
     fetchProjects();
   }, []);
-
   return (
     <div id='projects' className="p-3">
       <header className="m-10">

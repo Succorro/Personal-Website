@@ -10,7 +10,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div id="App" >
+    <div >
       <Nav/>
       <Routes>
         <Route path="/projects" element={<Projects />}/>

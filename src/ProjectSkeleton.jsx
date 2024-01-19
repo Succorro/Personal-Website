@@ -3,10 +3,11 @@ import {Card, Skeleton} from "@nextui-org/react";
 const array = [1, 2, 3]
 function ProjectSkeleton() { 
   return (
-    <div className="w-[600px] h-[400px] flex flex-wrap justify-center mb-10 ">
+    <div className="w-full md:w-full mb-10 ml-3 mr-3">
+        <div className="sm:ml-16 sm:mr-16 md:ml-0 md:mr-0 lg:flex lg:flex-row">
         {array.map((skel) => {
             return (
-                <Card key={skel} className="w-full md:w-4/5 lg:w-3/5 h-full md:h-4/5 lg:h-3/5 space-y-5 p-6 mb-10" radius="lg">
+                <Card key={skel} className="w-full md:w-4/5 lg:w-3/5 h-full md:h-4/5 lg:h-3/5 space-y-5 p-6 mb-10 md:ml-4 md:mr-4" radius="lg">
                     <Skeleton className="rounded-lg">
                         <div className="h-60 rounded-lg bg-default-300"></div>
                     </Skeleton>
@@ -21,6 +22,7 @@ function ProjectSkeleton() {
                 </Card>
             )
         })}
+        </div>
     </div>
   )
 }
