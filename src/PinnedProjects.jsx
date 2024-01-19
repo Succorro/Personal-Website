@@ -5,28 +5,28 @@ function PinnedProjects({project}) {
     const {html_url, description, name} = project
     let image;
     if (name === 'Recipe_Share') {
-        image = ''
-    } else if (name === 'Full-CRUD-app') {
-        image = ''
+        image = '/Recipe.jpeg'
+    } else if (name === 'Hat_Reviewer') {
+        image = 'Hat.jpeg'
     } else if (name === 'movie-review-app') {
-        image = ''
+        image = '/Movie.jpeg'
     } else if (name === 'one-piece-react') {
-        image = ''
+        image = '/Piece.jpeg'
     } else if (name === 'Brewery_FInder') {
         image = '/Booze.gif'
     } else {
-        image = ''
+        image = 'coe.png'
     }
   return (
-    <div className='w-full md:w-1/2 lg:w-1/3'>
-        <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0'>
+    <div className='w-full md:w-3/6 lg:w-2/6'>
+        <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0 lg:ml-5 lg:mr-5'>
             <a href={html_url} target='_blank' rel='noopener noreferrer'>
-            <Card isPressable className="w-full md:w-4/5 lg:w-3/5 max-h-[400px] space-y-5 p-6 mb-10">
+            <Card isPressable className="w-full max-h-[500px] space-y-5 p-6 mb-10">
                 <CardBody>
                     <Image
                     removeWrapper
                     alt="Card background"
-                    className="z-0 w-full bg-background"
+                    className="z-0 w-full "
                     src={image} 
                     />
                 </CardBody>
