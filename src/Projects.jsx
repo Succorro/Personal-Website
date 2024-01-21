@@ -26,15 +26,13 @@ const Projects = () => {
       </header>
       <section className='not-prose'>
         <div className='flex flex-wrap m-0 justify-center '>
-          {projects ? 
-          projects.map((project, index) => (
-            <PinnedProjects project={project} key={index}/>
-          )) : 
-          <ProjectSkeleton/>}
           <div className='w-full md:w-3/6 lg:w-2/6'>
                     <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0 lg:ml-5 lg:mr-5'>
-                        <a href='https://rent-a-bin.com' target='_blank' rel='noopener noreferrer'>
-                        <Card isPressable className="w-full max-h-[500px] space-y-5 p-6 mb-10">
+                        <a href='https://rent-a-bin247.com' target='_blank' rel='noopener noreferrer'>
+                        <Card 
+                        isPressable 
+                        isBlurred
+                        className="w-full max-h-[500px] hover:border-none hover:bg-gray-200 shadow-xl space-y-5 p-6 mb-10">
                             <CardBody>
                                 <Image
                                 removeWrapper
@@ -53,6 +51,11 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
+                {projects ? 
+                projects.map((project, index) => (
+                    <PinnedProjects project={project} key={index}/>
+                )) : 
+                <ProjectSkeleton/>}
         </div>
       </section>
     </div>

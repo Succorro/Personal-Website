@@ -21,7 +21,10 @@ function PinnedProjects({project}) {
     <div className='w-full md:w-3/6 lg:w-2/6'>
         <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0 lg:ml-5 lg:mr-5'>
             <a href={html_url} target='_blank' rel='noopener noreferrer'>
-            <Card isPressable className="w-full max-h-[500px] space-y-5 p-6 mb-10">
+            <Card 
+            isPressable 
+            isBlurred
+            className="w-full max-h-[500px] hover:border-none hover:bg-gray-100 shadow-xl space-y-5 p-6 mb-10">
                 <CardBody>
                     <Image
                     removeWrapper

@@ -9,9 +9,9 @@ function Nav() {
       <div className=" px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-0 sm:pr-0">
-            <button type="button" className="p-1.5 relative rounded-full bg-gray-800 p-1 text-white hover:outline-none hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <button type="button" className="p-2 rounded-full bg-gray-700 p-1 text-white hover:outline-none hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
               <Link className="hover:text-gray-300 hover:outline-none" to='/'>
-                <p className="text-xl font-bold">SG</p>
+                <p className=" text-xl font-bold">SG</p>
               </Link>
             </button>
           </div>

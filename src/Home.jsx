@@ -4,7 +4,7 @@ const languages = [
 ];
 
 const languageClassMap = {
-  "HTML, ": "text-orange-500",
+  "HTML, ": "text-orange",
   "CSS, ": "text-blue-600",
   "JavaScript, ": "text-yellow-400",
   "React Library, ": "text-blue-400",
@@ -16,7 +16,9 @@ const Home = () => {
   const pStyle = 'text-2xl font-bold text-gray-400 p-5';
 
   return (
-    <div id='home' className="p-3">
+    <div id='home' className="p-3 ">
+      {/* <img className="absolute h-full rotate-180 z-[-20] mt-[-10] md:translate-x-5 translate-x-5 -translate-y-10" src="/bubble.png" alt="bubble" /> */}
+      {/* <img className="absolute h-full rotate-0 z-[-20] mt-[-10] lg:translate-x-full lg:scale-75 xl:scale-100 xl:translate-x-[170%] md:translate-x-80 sm:translate-x-80 translate-x-96 -translate-y-36" src="/bubble.png" alt="bubble" /> */}
       <header className="m-10">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-500">
           As a <span className="text-cornflowerblue">Software Developer</span> who enjoys working on new and innovative technology, I am always learning. 
