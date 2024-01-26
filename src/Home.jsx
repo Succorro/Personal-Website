@@ -1,14 +1,7 @@
 import HomeParagraph from "./HomeParagraph";
-import { useState } from "react";
 const Home = () => {
-    const [isVisible, setIsVisible] = useState({
-        paragraph1: false,
-        paragraph2: false,
-        paragraph3: false,
-        link: false,
-      });
   return (
-    <div id='home' className="p-3 bg-cornflowerblue font-mono ">
+    <div id='home' className="p-3 bg-cornflowerblue font-mono min-height-[100rem]">
       <header className="m-10">
         <p className="text-start ml-10 font-bold text-white mb-5">Hi, I&apos;m <span className="underline decoration-2 decoration-orange/90">Steven Gutierrez</span></p>
         <h1 className="font-bold text-orange text-5xl ">
@@ -26,7 +19,7 @@ const Home = () => {
       </header>
 
       <section className="bg-gray-800 p-10 flex flex-col items-center mb-20 rounded-3xl">
-        <HomeParagraph isVisible={isVisible} setIsVisible={setIsVisible}/>
+        <HomeParagraph />
         
       </section>
     </div>
