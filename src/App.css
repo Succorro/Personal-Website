@@ -6,3 +6,28 @@
   height: 100vh;
   width: 100vw;
 }
+
+.orange {
+  color: orange;
+}
+.blue {
+  color: #2563eb
+}
+.yellow {
+  color:gold
+}
+.lightBlue {
+  color: cornflowerblue
+}
+.red {
+  color: crimson;
+}
+.lightRed {
+  color:#EF4444
+}
+.lighterBlue {
+  color: #93c5f3
+}
+.purple {
+  color: #5c6bc0
+}

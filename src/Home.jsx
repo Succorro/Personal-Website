@@ -27,9 +27,7 @@ const Home = () => {
 
       <section className="bg-gray-800 p-10 flex flex-col items-center mb-20 rounded-3xl">
         <HomeParagraph isVisible={isVisible} setIsVisible={setIsVisible}/>
-        <a href="https://github.com/Succorro" rel="noreferrer" target="_blank" className={isVisible.link ? '' : 'hidden'}>
-          <img className='w-10' src="/github.png" alt="Github" />
-        </a>
+        
       </section>
     </div>
   );

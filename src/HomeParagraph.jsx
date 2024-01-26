@@ -1,48 +1,19 @@
 import Typewriter from 'typewriter-effect'
-const pStyle = 'text-2xl font-bold text-gray-400 p-5';
-
-const languages = [
-    "HTML, ", "CSS, ", "JavaScript, ", "React Library, ", "Ruby, ", "Ruby on Rails, ", "Tailwind CSS"
-  ];
-  
-  const languageClassMap = {
-    "HTML, ": "text-orange",
-    "CSS, ": "text-blue-600",
-    "JavaScript, ": "text-yellow-400",
-    "React Library, ": "text-blue-400",
-    "Ruby, ": "text-red-600",
-    "Ruby on Rails, ": "text-red-500",
-  };
 
 function HomeParagraph() {
 
     return (
         <>
           <Typewriter
-            
+            onInit={(typewriter) => {
+                typewriter.start().typeString("<div><p>I'm a passionate developer, who loves turning ideas into reality through coding.</p> <br/> <p>Skills include: <span class='orange'>HTML,</span> <span class='blue'>CSS,</span> <span class='yellow'>JavaScript,</span> <span class='lightBlue'>React Library,</span> <span class='red'>Ruby,</span> <span class='lightRed'>Ruby on Rails,</span> <span class='lighterBlue'>Tailwind CSS</span></p> <br/> <p>Explore my projects to get a glimpse of my skills and personality with the <span class='purple'>GitHub</span> link below.</p> </br> <a class='flex items-center' href='https://github.com/Succorro' rel='noreferrer' target='_blank'><img class='w-10 ml-auto mr-auto' src='/github.png' alt='Github' /></a> </div>")
+            }}
             options={{
-                strings: ["I'm a passionate developer, who loves turning ideas into reality through coding."],
-                autoStart: true,
-                wrapperClassName: 'text-2xl font-bold text-gray-400 p-5'
+                wrapperClassName: 'text-2xl font-bold text-gray-400 p-5',
+                cursorClassName: 'text-cornflowerblue hidden',
+                delay: 35
               }}
           />
-          <p
-            className={pStyle}
-          >
-            I&apos;m a passionate developer, who loves turning ideas into reality through coding.
-          </p>
-          <p
-            className={pStyle}
-          >
-            Skills include: {languages.map((lang, index) => (
-              <span key={index} className={languageClassMap[lang] || 'text-blue-300'}>{lang}</span>
-            ))}
-          </p>
-          <p
-            className={pStyle}
-          >
-            Explore my projects to get a glimpse of my skills and personality with the <span className='text-purple'>GitHub</span> link below.
-          </p>
         </>
       );
 }
