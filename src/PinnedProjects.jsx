@@ -24,8 +24,9 @@ function PinnedProjects({project}) {
             <Card 
             isPressable 
             isBlurred
-            className="w-full max-h-[500px] hover:border-none hover:bg-gray-100 shadow-xl space-y-5 p-6 mb-10">
-                <CardBody>
+            shadow='lg'
+            className="w-full max-h-[500px] bg-gray-200 hover:border-none hover:bg-gray-300  space-y-5 p-6 mb-10">
+                <CardBody className='overflow-visible p-0'>
                     <Image
                     removeWrapper
                     alt="Card background"
@@ -34,9 +35,9 @@ function PinnedProjects({project}) {
                     />
                 </CardBody>
                 
-                <h4 className="text-cornflowerblue font-bold text-xl">{name}</h4>
+                <h4 className="text-gray-600 font-bold text-xl">{name}</h4>
                 <div className="p-4">
-                    <p className="text-gray-500">{description}</p>
+                    <p className="text-gray-600">{description}</p>
                         
                 </div>
             </Card>

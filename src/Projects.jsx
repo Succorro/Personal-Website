@@ -29,25 +29,26 @@ const Projects = () => {
           <div className='w-full md:w-3/6 lg:w-2/6'>
                     <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0 lg:ml-5 lg:mr-5'>
                         <a href='https://rent-a-bin247.com' target='_blank' rel='noopener noreferrer'>
-                        <Card 
-                        isPressable 
-                        isBlurred
-                        className="w-full max-h-[500px] hover:border-none hover:bg-gray-200 shadow-xl space-y-5 p-6 mb-10">
-                            <CardBody>
-                                <Image
-                                removeWrapper
-                                alt="Card background"
-                                className="z-0 w-full bg-background"
-                                src='/Rent.jpeg' 
-                                />
-                            </CardBody>
-                            
-                            <h4 className="text-cornflowerblue font-bold text-xl">Rent a Bin</h4>
-                            <div className="p-4">
-                                <p className="text-gray-500">Waste Management Container Rental Service</p>
-                                    
-                            </div>
-                        </Card>
+                            <Card 
+                            isPressable 
+                            isBlurred
+                            shadow='lg'
+                            className="w-full bg-gray-200 max-h-[500px] hover:border-none hover:bg-gray-300 space-y-5 p-6 mb-10">
+                                <CardBody className='overflow-visible p-0'>
+                                    <Image
+                                    removeWrapper
+                                    width='100%'
+                                    alt="Card background"
+                                    className="z-0 w-full"
+                                    src='/Rent.jpeg' 
+                                    />
+                                </CardBody>
+                                <h4 className="text-gray-600 font-bold text-xl">Rent a Bin</h4>
+                                <div className="p-4">
+                                    <p className="text-gray-600">Waste Management Container Rental Service</p>
+                                        
+                                </div>
+                            </Card>
                         </a>
                     </div>
                 </div>
