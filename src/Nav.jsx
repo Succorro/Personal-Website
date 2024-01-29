@@ -9,7 +9,7 @@ function Nav() {
       <div className=" px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-0 sm:pr-0 hover:outline-none">
-            <button type="button" className="p-2 rounded-full bg-orange p-1 text-white hover:outline-none hover:border-none hover:text-white focus:outline-none  focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <button type="button" className="p-2 rounded-full bg-background p-1 text-white hover:outline-none hover:border-none hover:text-white hover:ring-none focus:outline-none transition-all duration-1000">
               <Link className="hover:text-white hover:border-none hover:outline-none " to='/'>
                 <p className=" text-xl font-bold">SG</p>
               </Link>
@@ -20,8 +20,8 @@ function Nav() {
           <div className=" flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex sm:ml-auto sm:mr-auto space-x-4">
-                <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold" to='/projects'>Projects</Link>
-                <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold" to="/resume">Resume</Link>
+                <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100" to='/projects'>Projects</Link>
+                <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100" to="/resume">Resume</Link>
               </div>
             </div>
           </div>
@@ -39,8 +39,8 @@ function Nav() {
 
       <div className={isMenuOpen ? 'sm:hidden': 'sm:hidden hidden'} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
-        <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold" to='/projects'>Projects</Link>
-        <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold" to="/resume">Resume</Link>
+          <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100" to='/projects'>Projects</Link>
+          <Link className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100" to="/resume">Resume</Link>
         </div>
       </div>
     </nav>

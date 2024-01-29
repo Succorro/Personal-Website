@@ -6,7 +6,9 @@
   height: 100vh;
   width: 100vw;
 }
-
+.text-color {
+  color:tomato
+}
 .orange {
   color: orange;
 }
