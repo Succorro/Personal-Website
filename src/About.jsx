@@ -1,5 +1,20 @@
 // import React from 'react'
 
+import AboutCard from "./AboutCard"
+
+const skillsArray = [
+    {
+        skill: "React", 
+        image: '/science.png', 
+        text: 'JavaScript library that allows for an imperative approach to creating dynamic applications.'
+    },
+    {skill: "JavaScript", image: '/gmail.png', text: ''},
+    {skill: "Ruby", image: '/gmail.png', text: ''},
+    {skill: "Ruby on Rails", image: '/gmail.png', text: ''},
+    {skill: "Tailwind CSS", image: '/gmail.png', text: ''},
+    {skill: "Redux", image: '/gmail.png', text: ''}
+]
+
 function About() {
   return (
     <div id='about' className="p-3 text-white bg-cornflowerblue">
@@ -18,11 +33,14 @@ function About() {
                 With a strong foundation in technology and a genuine love for learning, I am committed to making a meaningful contribution to any organization that values innovation and continuous growth.
             </p>
         </div>
-        <div id='skills' className={divStyle}>
-            <h1>Front End</h1>
-            <img src="" alt="" />
-            <h1> Back End </h1>
-            <img src="" alt="" />
+        <div id='skills' className="">
+            <ul id="group" className="flex flex-col sm:grid sm:grid-cols-3 ">
+                {skillsArray.map((skill, index) =>{ 
+                    return(
+                        <AboutCard key={index} skills={skill}/>
+                    )
+                    })}        
+            </ul>
         </div>
         <div id='experience ' className={divStyle}>
             <h1>Experience/Education</h1>
