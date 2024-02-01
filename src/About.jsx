@@ -1,20 +1,17 @@
 // import React from 'react'
 
 import AboutCard from "./AboutCard"
-const credit = ['<a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Putra Arif Munazar - Flaticon</a>','<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>', 
-'<a href="https://www.flaticon.com/free-icons/ruby" title="ruby icons">Ruby icons created by Freepik - Flaticon</a>',
-''
- ]
+
 const skillsArray = [
     {
         skill: "React", 
-        image: '/science.png', 
+        image: '/react.svg', 
         text: 'JavaScript library that allows for an imperative approach to creating dynamic applications.'
     },
-    {skill: "JavaScript", image: '/js.png', text: ''},
-    {skill: "Ruby", image: '/ruby.png', text: ''},
-    {skill: "Ruby on Rails", image: '/rails-1.svg', text: ''},
-    {skill: "Tailwind CSS", image: '/tailwind-css-2.svg', text: ''},
+    {skill: "JavaScript", image: '/javascript.svg', text: ''},
+    {skill: "Ruby", image: '/ruby.svg', text: ''},
+    {skill: "Ruby on Rails", image: '/rails.svg', text: ''},
+    {skill: "Tailwind CSS", image: '/tailwind.svg', text: ''},
     {skill: "Redux", image: '/redux.svg', text: ''}
 ]
 

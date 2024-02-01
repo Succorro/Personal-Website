@@ -1,7 +1,7 @@
 import HomeParagraph from "./HomeParagraph";
 const Home = () => {
   return (
-    <div id='home' className="p-3 bg-cornflowerblue font-mono min-height-[100rem]">
+    <div id='home' className="p-3 bg-cornflowerblue font-sans min-height-[100rem]">
       <header className="m-10">
         <p className="text-start ml-10 font-bold text-white mb-10">Hi, I&apos;m <span className="underline decoration-2 decoration-background">Steven Gutierrez</span></p>
         <h1 className="font-bold text-background text-5xl">
@@ -11,10 +11,10 @@ const Home = () => {
         <h1 className="text-center text-background font-bold text-2xl mt-10">Contact me:</h1>
         <div className="flex justify-center mb-10">
           <a className="pr-1 m-10" href="https://www.linkedin.com/in/soysteven/" rel="noreferrer" target="_blank">
-            <img className="w-10" src="/linkedin.png" alt="LinkedIn" />
+            <img className="w-10" src="/linkedin.svg" alt="LinkedIn" />
           </a>
           <a className="m-10" href="mailto:stevengbmv@gmail.com">
-            <img className="w-10" src="/gmail.png" alt="Email" />
+            <img className="w-10" src="/gmail.svg" alt="Email" />
           </a>
         </div>
       </header>
