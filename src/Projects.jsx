@@ -33,7 +33,7 @@ const Projects = () => {
                             isPressable 
                             isBlurred
                             shadow='lg'
-                            className="w-full bg-gray-200 max-h-[500px] hover:border-none hover:bg-gray-300 space-y-5 p-6 mb-10">
+                            className="w-full bg-gray-200 lg:h-[380px] hover:border-none hover:bg-gray-300 space-y-5 p-6 mb-10">
                                 <CardBody className='overflow-visible p-0'>
                                     <Image
                                     removeWrapper
@@ -44,8 +44,8 @@ const Projects = () => {
                                     />
                                 </CardBody>
                                 <h4 className="text-gray-600 font-bold text-xl">Rent a Bin</h4>
-                                <div className="p-4">
-                                    <p className="text-gray-600">Waste Management Container Rental Service</p>
+                                <div className="">
+                                    <p className="text-gray-600 font-semibold">Waste Management Container Rental Service</p>
                                         
                                 </div>
                             </Card>

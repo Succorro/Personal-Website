@@ -18,14 +18,14 @@ function PinnedProjects({project}) {
         image = 'coe.png'
     }
   return (
-    <div className='w-full md:w-3/6 lg:w-2/6'>
-        <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0 lg:ml-5 lg:mr-5'>
+    <div className='w-full md:w-3/6 lg:w-2/6 '>
+        <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0 lg:ml-5 lg:mr-5 '>
             <a href={html_url} target='_blank' rel='noopener noreferrer'>
             <Card 
             isPressable 
             isBlurred
             shadow='lg'
-            className="w-full max-h-[500px] bg-gray-200 hover:border-none hover:bg-gray-300  space-y-5 p-6 mb-10">
+            className="w-full lg:h-[380px] bg-gray-200 hover:border-none hover:bg-gray-300  space-y-5 p-6 mb-10">
                 <CardBody className='overflow-visible p-0'>
                     <Image
                     removeWrapper
@@ -36,8 +36,8 @@ function PinnedProjects({project}) {
                 </CardBody>
                 
                 <h4 className="text-gray-600 font-bold text-xl">{name}</h4>
-                <div className="p-4">
-                    <p className="text-gray-600">{description}</p>
+                <div className="">
+                    <p className="text-gray-600  font-semibold">{description}</p>
                         
                 </div>
             </Card>
