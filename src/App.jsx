@@ -7,7 +7,7 @@ import Resume from './Resume';
 import About from './About';
 function App() {
   return (
-    <div className='w-full'>
+    <div className='w-full bg-cornflowerblue'>
       <Nav/>
       <Routes>
         <Route path="/about" element={<About />}/>

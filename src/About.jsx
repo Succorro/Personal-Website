@@ -8,7 +8,8 @@ import Skills from "./Skills"
 
 function About() {
   return (
-    <div id='about' className="p-3 text-white bg-cornflowerblue">
+    <div id='about' className="p-3 text-white ">
+
         <AboutBio/>
         <Skills/>
         <Education/>

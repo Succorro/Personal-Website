@@ -20,7 +20,7 @@ const Projects = () => {
     fetchProjects();
   }, []);
   return (
-    <div id='projects' className="p-3 bg-cornflowerblue">
+    <div id='projects' className="p-3">
       <header className="m-10">
         <h1 className="text-3xl font-bold text-white">Projects</h1>
       </header>

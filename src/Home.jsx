@@ -1,7 +1,7 @@
 import HomeParagraph from "./HomeParagraph";
 const Home = () => {
   return (
-    <div id='home' className="p-3 bg-cornflowerblue font-sans min-height-[100rem]">
+    <div id='home' className="p-3 font-sans min-height-[100rem]">
       <header className="m-10">
         <p className="text-start text-2xl ml-10 font-bold text-white mb-10">Hi, I&apos;m <span className="underline decoration-2 decoration-background">Steven Gutierrez</span></p>
         <h1 className="font-bold text-gray-200 text-5xl">
