@@ -7,7 +7,7 @@ const Home = () => {
         <h1 className="font-bold text-gray-200 text-5xl">
           Software Developer
         </h1>
-        <p className="text-lg mt-10 font-bold text-white">I enjoy working on new and innovative technology, always learning and finding new ways to combine my passion and creativity with my code. </p>
+        <p className="text-xl mt-10 font-bold text-white">I enjoy working on new and innovative technology, always learning and finding new ways to combine my passion and creativity with my code. </p>
         <h1 className="text-center text-white font-bold text-3xl mt-10">Contact me:</h1>
         <div className="flex justify-center mb-10">
           <a className="m-10" href="https://www.linkedin.com/in/soysteven/" rel="noreferrer" target="_blank">
