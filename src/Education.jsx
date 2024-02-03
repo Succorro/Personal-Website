@@ -1,8 +1,11 @@
 
-function Education() {
+// eslint-disable-next-line react/prop-types
+function Education({style}) {
   return (
-    <div id='experience ' className={divStyle}>
-        <h1>Experience/Education</h1>
+    <div className={style}>
+        <div id='experience ' className={divStyle}>
+            <h1>Experience/Education</h1>
+        </div>
     </div>
   )
 }

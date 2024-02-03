@@ -12,9 +12,10 @@ const skillsArray = [
     {skill: "Tailwind CSS", image: '/tailwind.svg', text: ''},
     {skill: "Redux", image: '/redux.svg', text: ''}
 ]
-function Skills() {
+// eslint-disable-next-line react/prop-types
+function Skills({style}) {
   return (
-    <div id='skills' className="">
+    <div id='skills' className={style}>
             <h1 className="font-bold text-2xl">Skills</h1>
             <ul id="group" className="flex flex-col sm:grid sm:grid-cols-3 ">
                 {skillsArray.map((skill, index) =>{ 
