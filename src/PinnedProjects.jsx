@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Card,CardBody, Image } from '@nextui-org/react';
 
-function PinnedProjects({project}) {
+function PinnedProjects({project, cardStyle}) {
     const {html_url, description, name} = project
     let image;
     if (name === 'Recipe_Share') {
@@ -18,31 +18,25 @@ function PinnedProjects({project}) {
         image = 'coe.png'
     }
   return (
-    <div className='w-full md:w-3/6 lg:w-2/6 '>
-        <div className='sm:ml-16 sm:mr-16 md:ml-10 md:mr-0 lg:ml-5 lg:mr-5 '>
+    <div className={cardStyle}>
             <a href={html_url} target='_blank' rel='noopener noreferrer'>
             <Card 
             isPressable 
-            isBlurred
             shadow='lg'
-            className="w-full lg:h-[380px] bg-gray-200 hover:border-none hover:bg-gray-300  space-y-5 p-6 mb-10">
+            className="w-full  bg-gray-200 hover:border-none hover:bg-gray-300  space-y-4 p-4">
                 <CardBody className='overflow-visible p-0'>
                     <Image
                     removeWrapper
                     alt="Card background"
-                    className="z-0 w-full "
+                    className="max-h-[120px] w-full "
                     src={image} 
                     />
                 </CardBody>
                 
-                <h4 className="text-gray-600 font-bold text-xl">{name}</h4>
-                <div className="">
-                    <p className="text-gray-600  font-semibold">{description}</p>
-                        
-                </div>
+                <h4 className="text-gray-600 font-bold text-lg">{name}</h4>
+                <p className="text-gray-600 text-sm font-semibold overflow-auto h-[60px]">{description}</p>
             </Card>
             </a>
-        </div>
     </div>
   )
 }
