@@ -15,17 +15,17 @@ const skillsArray = [
 // eslint-disable-next-line react/prop-types
 function Skills({style}) {
   return (
-    <div id='skills' className={style}>
-            <h1 className="font-bold text-2xl">Skills</h1>
-            <ul id="group" className="flex flex-col sm:grid sm:grid-cols-3 ">
+    <div className={style}>
+        <div id='skills' className="bg-gray-800 rounded-lg text-start text-lg font-bold px-10 my-10 pb-5">
+            <ul id="group" className="flex flex-row">
                 {skillsArray.map((skill, index) =>{ 
                     return(
                         <SkillsCard key={index} skills={skill}/>
                     )
                     })}        
             </ul>
-            
         </div>
+    </div>
   )
 }
 
