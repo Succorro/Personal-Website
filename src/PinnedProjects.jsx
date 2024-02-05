@@ -14,8 +14,8 @@ function PinnedProjects({project, cardStyle}) {
         image = '/Piece.jpeg'
     } else if (name === 'Brewery_FInder') {
         image = '/Booze.gif'
-    } else {
-        image = 'coe.png'
+    } else if (name === 'Rent A Bin') {
+        image = '/Rent.jpeg'
     }
   return (
     <div className={cardStyle}>
