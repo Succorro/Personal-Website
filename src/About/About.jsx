@@ -14,12 +14,11 @@ function About() {
     }
     const [information, setInformation] = useState(initialInformation)
     const [display, setDisplay] = useState('none')
-    const [displayContent, setDisplayContent] = useState('')
+    const [displayContent, setDisplayContent] = useState(<></>)
 
     function handleImgClick(type){
         setInformation({...initialInformation, [type]: 'transition-all ease-in-out delay-200 opacity-100 z-40 absolute -my-52 sm:-my-32 mx-10 '})
         setImgStyle('z-10 transition-all ease-in-out delay-200 opacity-0' )
-        console.log(information)
         setDisplay(type)
     }
 
@@ -27,6 +26,7 @@ function About() {
         setImgStyle('z-10 transition-all ease-linear delay-200 duration-0 m-10 opacity-100')
         setInformation(initialInformation)
         setDisplay('')
+        setDisplayContent(<></>)
     }
 
     useEffect(()=>{
@@ -34,14 +34,14 @@ function About() {
         setDisplayContent(<AboutBio handleBtn={handleBtn} style={information.about}/>)
     }else if (display === 'skills'){
         setDisplayContent(<Skills handleBtn={handleBtn} style={information.skills}/>)
-    }else {
+    }else if (display === 'education'){
         setDisplayContent(<Education handleBtn={handleBtn} style={information.education}/>)
     }  
     },[display])
 
     
     return (
-        <div id='about' className="p-3 text-white h-[100vh] ">
+        <div id='about' className="p-3 text-white h-[100vh]">
         <div id="image flex" className="flex flex-wrap justify-center w-3/5 lg:w-full lg:mt-10 m-auto">
             <button id='btn' onClick={()=> handleImgClick('about')} className={imgStyle}>
                 <img src="/man.png" alt="avatar" />
