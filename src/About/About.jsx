@@ -42,7 +42,7 @@ function About() {
     
     return (
         <div id='about' className="p-3 text-white h-[100vh] ">
-        <div id="image flex" className="flex flex-wrap justify-center w-3/5 lg:w-full lg:mt-40 m-auto">
+        <div id="image flex" className="flex flex-wrap justify-center w-3/5 lg:w-full lg:mt-10 m-auto">
             <button id='btn' onClick={()=> handleImgClick('about')} className={imgStyle}>
                 <img src="/man.png" alt="avatar" />
                 <div className='z-20 -mt-16 font-bold border bg-color opacity-0 hover:opacity-100 hover:bg-color focus:bg-color transition-all ease-linear duration-0 hover:ease-out hover:duration-1000 hover:delay-100 delay-1000'>
@@ -62,7 +62,9 @@ function About() {
                 </div>
             </button>
         </div>
+        <div className='flex justify-center'>
         {displayContent}
+        </div>
     </div>
   )
 }

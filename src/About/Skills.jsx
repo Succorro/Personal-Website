@@ -1,29 +1,14 @@
-import SkillsCard from "./SkillsCard"
+import Carousel from "./Carousel"
 
-const skillsArray = [
-    {
-        skill: "React", 
-        image: '/react.svg', 
-        text: 'JavaScript library that allows for an imperative approach to creating dynamic applications.'
-    },
-    {skill: "JavaScript", image: '/javascript.svg', text: ''},
-    {skill: "Ruby", image: '/ruby.svg', text: ''},
-    {skill: "Ruby on Rails", image: '/rails.svg', text: ''},
-    {skill: "Tailwind CSS", image: '/tailwind.svg', text: ''},
-    {skill: "Redux", image: '/redux.svg', text: ''}
-]
 // eslint-disable-next-line react/prop-types
-function Skills({style}) {
+function Skills({style, handleBtn}) {
   return (
     <div className={style}>
-        <div id='skills' className="bg-gray-800 rounded-lg text-start text-lg font-bold px-10 my-10 pb-5">
-            <ul id="group" className="flex flex-row">
-                {skillsArray.map((skill, index) =>{ 
-                    return(
-                        <SkillsCard key={index} skills={skill}/>
-                    )
-                    })}        
-            </ul>
+        <div id='skills' className="bg-gray-800 rounded-lg text-start text-lg font-bold p-5 mt-10 max-w-[85vw] ">
+            <div className="flex justify-end mb-0">
+                <button onClick={()=> handleBtn()} className="border px-2 rounded-3xl hover:bg-gray-500">X</button>
+            </div>
+            <Carousel/>
         </div>
     </div>
   )
