@@ -63,9 +63,6 @@ function About() {
             </button>
         </div>
         {displayContent}
-        {/* <AboutBio style={information.about} />
-        <Skills style={information.skills}/>
-        <Education style={information.education}/> */}
     </div>
   )
 }
