@@ -50,7 +50,7 @@ const Carousel = () => {
 
 
   return (
-    <div className="my-12 mx-auto pb-10">
+    <div className="my-12 mx-auto  pb-10">
       <div className="relative overflow-hidden w-full">
         <div className="flex justify-between absolute top left w-full h-full">
           <button
