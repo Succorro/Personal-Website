@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import PinnedProjects from './PinnedProjects';
+import ProjectsDisplay from './ProjectsDisplay';
 // import { Card,CardBody, Image } from '@nextui-org/react';
 
 const Projects = () => {
@@ -21,7 +22,7 @@ const Projects = () => {
     fetchProjects();
   }, []);
   return (
-    <div id='projects' className="h-[150vh] md:h-[100vh] lg:pt-1">
+    <div id='projects' className="h-[175vh] md:h-[100vh] lg:pt-1">
       <section className='not-prose'>
         <div className='flex flex-wrap justify-center '>
           { projects? 
@@ -31,6 +32,7 @@ const Projects = () => {
           <></>}
         </div>
       </section>
+      <ProjectsDisplay/>
     </div>
   );
 };

@@ -19,7 +19,7 @@ function Education({style, handleBtn}) {
           <p className="mb-5 text-gray-300">
           Working with businesses to create dynamic, user friendly and robust web applications has allowed me to grow as a developer. 
           With the solo journey that freelance development brings i&apos;ve learned how to apply coding principles and best practices in a professional setting. 
-          In addition to the dedication and commitment that it takes in order to bring my clients a finsihed product. 
+          In addition to the dedication and commitment that it takes in order to bring my clients a finished product. 
           </p>
         </div>
     </div>
