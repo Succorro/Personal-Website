@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { Card,CardBody, Image } from '@nextui-org/react';
 
-function PinnedProjects({project, cardStyle}) {
-    const {html_url, description, name} = project
+function PinnedProjects({project, cardStyle, handlePopup}) {
+    const {description, name} = project
     let image;
     if (name === 'Recipe_Share') {
         image = '/Recipe.jpeg'
@@ -19,8 +19,8 @@ function PinnedProjects({project, cardStyle}) {
     }
   return (
     <div className={cardStyle}>
-            <a href={html_url} target='_blank' rel='noopener noreferrer'>
             <Card 
+            onClick={()=> handlePopup(project)}
             isPressable 
             shadow='lg'
             className="w-full  bg-gray-200 hover:border-none hover:bg-gray-300  space-y-4 p-4">
@@ -36,7 +36,6 @@ function PinnedProjects({project, cardStyle}) {
                 <h4 className="text-gray-600 font-bold text-lg">{name}</h4>
                 <p className="text-gray-600 text-sm font-semibold overflow-auto h-[60px]">{description}</p>
             </Card>
-            </a>
     </div>
   )
 }

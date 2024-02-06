@@ -1,25 +1,32 @@
+/* eslint-disable react/prop-types */
 
-function ProjectsDisplay() {
+function ProjectsDisplay({projectInfo}) {
+    const {name, description, imageUrl, html_url} = projectInfo
+    const links = [html_url, 'link', 'link']
   return (
     <div >
-        <div className="border border-4 border-white p-4 flex justify-between rounded rounded-xl mx-auto w-[75vw] h-[45vw]">
-            <div id="diplay-left">
-                <img className="w-[35vw]" src="/Rent.jpeg" alt="project" />
-                <div id='links'>
-                    <a href="">link</a>
-                    <a href="">link</a>
-                    <a href="">link</a>
+        <div className="border border-4 border-white p-4 flex rounded rounded-xl mx-auto w-[75vw] h-[45vw]">
+            <div className="bg-white flex p-2">
+                <div id="diplay-left" className="w-full">
+                    <img className="w-[35vw]" src={imageUrl} alt="project" />
+                    <div id='links' className="mt-8 flex flex-wrap justify-center">
+                        {links.map((link, index) => {
+                            return <a key={index} className="bg-gray-800 rounded-xl text-white px-3 py-2 m-1" href={link}>Link</a>
+                        })}
+                    </div>
                 </div>
-            </div>
-            <div id="display-right">
-                <div>
-                    <h3></h3>
-                    <h1></h1>
-                    <button></button>
-                </div>
-                <div>
-                    <h3></h3>
-                    <p>kk</p>
+                <div id="display-right" className="  flex flex-col ml-4 w-full">
+                    <div className=" flex flex-row">
+                        <div className="w-full text-start">
+                            <h3 className="font-bold text-sm text-gray-700">Project</h3>
+                            <h1 className="font-bold text-2xl text-gray-400">{name}</h1>
+                        </div>
+                        <button className="border mb-6 px-2 rounded-3xl hover:bg-gray-500">X</button>
+                    </div>
+                    <div className="ml-0  flex flex-col text-start">
+                        <h3 className="font-bold text-sm text-gray-700">About</h3>
+                        <p className="font-semibold text-md text-gray-400 h-[21vh] relative overflow-scroll">{description}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,4 +47,5 @@ function ProjectsDisplay() {
   )
 }
 
+//onClick={()=> handleBtn()}
 export default ProjectsDisplay

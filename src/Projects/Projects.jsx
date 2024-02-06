@@ -5,8 +5,14 @@ import ProjectsDisplay from './ProjectsDisplay';
 
 const Projects = () => {
   const [projects, setProjects] = useState(null);
+  const [projectInfo, setProjectInfo] = useState({id: 1 , html_url: 'https://rent-a-bin247.com', imageUrl: '/Rent.jpeg', description: "Waste Management Container Rental Service", name: 'Rent A Bin'})
+
   const cardStyle = 'w-[250px] h-[275px] m-4'
   const rentABin = [{id: 1 , html_url: 'https://rent-a-bin247.com', description: "Waste Management Container Rental Service", name: 'Rent A Bin'}]
+
+  function handlePopup (project){
+    console.log(project)
+  }
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -27,12 +33,12 @@ const Projects = () => {
         <div className='flex flex-wrap justify-center '>
           { projects? 
           projects.map((project, index) => (
-              <PinnedProjects project={project} key={index} cardStyle={cardStyle}/>
+              <PinnedProjects handlePopup={handlePopup} project={project} key={index} cardStyle={cardStyle}/>
           )) : 
           <></>}
         </div>
       </section>
-      <ProjectsDisplay/>
+      <ProjectsDisplay projectInfo={projectInfo}/>
     </div>
   );
 };
