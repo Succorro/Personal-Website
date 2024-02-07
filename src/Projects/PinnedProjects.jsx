@@ -2,21 +2,7 @@
 import { Card,CardBody, Image } from '@nextui-org/react';
 
 function PinnedProjects({project, cardStyle, handlePopup}) {
-    const {description, name} = project
-    let image;
-    if (name === 'Recipe_Share') {
-        image = '/Recipe.jpeg'
-    } else if (name === 'Hat_Reviewer') {
-        image = 'Hat.jpeg'
-    } else if (name === 'movie-review-app') {
-        image = '/Movie.jpeg'
-    } else if (name === 'one-piece-react') {
-        image = '/Piece.jpeg'
-    } else if (name === 'Brewery_FInder') {
-        image = '/Booze.gif'
-    } else if (name === 'Rent A Bin') {
-        image = '/Rent.jpeg'
-    }
+    const {image, name} = project
   return (
     <div className={cardStyle}>
             <Card 
@@ -34,7 +20,6 @@ function PinnedProjects({project, cardStyle, handlePopup}) {
                 </CardBody>
                 
                 <h4 className="text-gray-600 font-bold text-lg">{name}</h4>
-                <p className="text-gray-600 text-sm font-semibold overflow-auto h-[60px]">{description}</p>
             </Card>
     </div>
   )

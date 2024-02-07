@@ -1,44 +1,50 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import PinnedProjects from './PinnedProjects';
 import ProjectsDisplay from './ProjectsDisplay';
 // import { Card,CardBody, Image } from '@nextui-org/react';
+import projectsData from '../projectsData';
 
 const Projects = () => {
-  const [projects, setProjects] = useState(null);
-  const [projectInfo, setProjectInfo] = useState({id: 1 , html_url: 'https://rent-a-bin247.com', imageUrl: '/Rent.jpeg', description: "Waste Management Container Rental Service", name: 'Rent A Bin'})
+  const [projectInfo, setProjectInfo] = useState({
+    id: 1,
+    name: "Rent A Bin",
+    about: "Waste Management Container Rental Service",
+    image: "/Rent.jpeg",
+    links: [
+      {
+        name: "Website",
+        url: "https://rent-a-bin247.com/",
+      },
+    ],
+  },)
 
-  const cardStyle = 'w-[250px] h-[275px] m-4'
-  const rentABin = [{id: 1 , html_url: 'https://rent-a-bin247.com', description: "Waste Management Container Rental Service", name: 'Rent A Bin'}]
+  const [sectionStyle, setSectionStyle] = useState('z-10 transition-all ease-in-out delay-200 opacity-100 flex items-center justify-center')
+  const [displayStyle, setDisplayStyle] = useState('absolute -z-50 transition-all ease-in-out delay-300 absolute opacity-0 -translate-y-[100vh]')
+
+  const cardStyle = 'w-[250px] h-[200px]'
 
   function handlePopup (project){
-    console.log(project)
+    setProjectInfo(project)
+    setDisplayStyle('z-20 transition-all ease-in-out delay-300 opacity-100 -translate-y-[230vh] sm:-translate-y-[110vh] md:-translate-y-[90vh] lg:-translate-y-[85vh]')
+    setSectionStyle('-z-50 transition-all ease-in-out delay-200 opacity-0 flex items-center justify-center')
   }
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch('https://api.github.com/users/Succorro/starred');
-        const data = await response.json();
-        const allData = rentABin.concat(data)
-        setProjects(allData);
-      } catch (error) {
-        console.error('Error fetching GitHub repositories:', error);
-      }
-    };
 
-    fetchProjects();
-  }, []);
+  function handleBtn(){
+    setDisplayStyle('absolute -z-50 -translate-y-[100vh] transition-all ease-in-out delay-200 opacity-0')
+    setSectionStyle('z-10 transition-all ease-in-out delay-200 opacity-100 flex items-center justify-center')
+  }
   return (
-    <div id='projects' className="h-[175vh] md:h-[100vh] lg:pt-1">
-      <section className='not-prose'>
-        <div className='flex flex-wrap justify-center '>
-          { projects? 
-          projects.map((project, index) => (
+    <div id='projects' className="h-[120vh] md:h-[100vh] lg:pt-1 z-10">
+      <section className={sectionStyle}>
+        <div className='grid grid-cols-2 gap-10'>
+          { projectsData? 
+          projectsData.map((project, index) => (
               <PinnedProjects handlePopup={handlePopup} project={project} key={index} cardStyle={cardStyle}/>
           )) : 
           <></>}
         </div>
       </section>
-      <ProjectsDisplay projectInfo={projectInfo}/>
+      <ProjectsDisplay handleBtn={handleBtn} displayStyle={displayStyle} projectInfo={projectInfo}/>
     </div>
   );
 };
