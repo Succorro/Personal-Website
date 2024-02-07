@@ -7,6 +7,11 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    theme: {
+      fontFamily: {
+        poppins: ["Roboto Slab", "serif"],
+      },
+    },
     extend: {
       colors: {
         cornflowerblue: "#6495ed",

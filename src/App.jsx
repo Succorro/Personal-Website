@@ -7,7 +7,7 @@ import About from './About/About';
 
 function App() {
   return (
-    <div className='w-full bg-color'>
+    <div className="w-full bg-color font-['poppins']">
       <Nav />
       <Routes>
         <Route path="/about" element={<About />}/>

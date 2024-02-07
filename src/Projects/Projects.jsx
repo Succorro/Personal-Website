@@ -19,18 +19,18 @@ const Projects = () => {
   },)
 
   const [sectionStyle, setSectionStyle] = useState('z-10 transition-all ease-in-out delay-200 opacity-100 flex items-center justify-center')
-  const [displayStyle, setDisplayStyle] = useState('absolute -z-50 transition-all ease-in-out delay-300 absolute opacity-0 -translate-y-[100vh]')
+  const [displayStyle, setDisplayStyle] = useState(' -z-50 transition-all ease-in-out delay-300 opacity-0 -translate-y-[1000vh]')
 
   const cardStyle = 'w-[250px] h-[200px]'
 
   function handlePopup (project){
     setProjectInfo(project)
-    setDisplayStyle('z-20 transition-all ease-in-out delay-300 opacity-100 -translate-y-[230vh] sm:-translate-y-[110vh] md:-translate-y-[90vh] lg:-translate-y-[85vh]')
+    setDisplayStyle('z-20 transition-all ease-in-out delay-300 opacity-100 -translate-y-[90vh] sm:-translate-y-[85vh] md:-translate-y-[85vh] lg:-translate-y-[85vh]')
     setSectionStyle('-z-50 transition-all ease-in-out delay-200 opacity-0 flex items-center justify-center')
   }
 
   function handleBtn(){
-    setDisplayStyle('absolute -z-50 -translate-y-[100vh] transition-all ease-in-out delay-200 opacity-0')
+    setDisplayStyle('-z-50 -translate-y-[1000vh] transition-all ease-in-out delay-300 opacity-0')
     setSectionStyle('z-10 transition-all ease-in-out delay-200 opacity-100 flex items-center justify-center')
   }
   return (
