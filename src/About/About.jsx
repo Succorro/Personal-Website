@@ -6,24 +6,24 @@ import { useEffect } from 'react'
 
 
 function About() {
-    const [imgStyle, setImgStyle] = useState('z-10 transition-all ease-in-out delay-200 m-10 opacity-100')
+    const [imgStyle, setImgStyle] = useState('z-10 transition-all ease-in-out delay-300 duration-1000 m-10 opacity-100')
     const initialInformation = {
-        about: 'transition-all ease-in-out delay-200 opacity-0  ',
-        skills: 'transition-all ease-in-out delay-200 opacity-0  ',
-        education: 'transition-all ease-in-out delay-200 opacity-0  ' 
+        about: 'transition-all ease-in-out delay-300 duration-1000 opacity-0  ',
+        skills: 'transition-all ease-in-out delay-300 duration-1000 opacity-0  ',
+        education: 'transition-all ease-in-out delay-300 duration-1000 opacity-0  ' 
     }
     const [information, setInformation] = useState(initialInformation)
     const [display, setDisplay] = useState('none')
     const [displayContent, setDisplayContent] = useState(<></>)
 
     function handleImgClick(type){
-        setInformation({...initialInformation, [type]: 'transition-all ease-in-out delay-200 opacity-100 z-40 absolute -my-52 sm:-my-32 mx-10 '})
-        setImgStyle('z-10 transition-all ease-in-out delay-200 opacity-0' )
+        setInformation({...initialInformation, [type]: 'transition-all ease-in-out delay-300 duration-1000 opacity-100 z-40 absolute -my-52 sm:-my-32 mx-10 '})
+        setImgStyle('z-10 transition-all ease-in-out delay-300 duration-1000 opacity-0' )
         setDisplay(type)
     }
 
     function handleBtn(){
-        setImgStyle('z-10 transition-all ease-linear delay-200 duration-0 m-10 opacity-100')
+        setImgStyle('z-10 transition-all ease-linear delay-300 duration-1000 m-10 opacity-100')
         setInformation(initialInformation)
         setDisplay('')
         setDisplayContent(<></>)

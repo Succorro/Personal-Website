@@ -8,8 +8,7 @@ function PinnedProjects({project, cardStyle, handlePopup}) {
             <Card 
             onClick={()=> handlePopup(project)}
             isPressable 
-            shadow='lg'
-            className="w-full  bg-gray-200 hover:border-none hover:bg-gray-300  space-y-4 p-4">
+            className="w-full  bg-gray-200 hover:border-none hover:bg-gray-300  space-y-4 p-3">
                 <CardBody className='overflow-visible p-0'>
                     <Image
                     removeWrapper

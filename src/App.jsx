@@ -7,7 +7,8 @@ import About from './About/About';
 
 function App() {
   return (
-    <div className="w-full bg-color font-['poppins']">
+    <div style={{
+      backgroundImage:"url('Space.png')"}} className="w-full bg-color font-['poppins']">
       <Nav />
       <Routes>
         <Route path="/about" element={<About />}/>

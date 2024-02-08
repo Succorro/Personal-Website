@@ -1,8 +1,8 @@
 import HomeParagraph from "./HomeParagraph";
 const Home = () => {
   return (
-    <div id='home' className="p-3 min-height-[100rem]">
-      <header className="m-10">
+    <div id='home'   className="p-3 min-height-[100rem]">
+      <header className="m-10" >
         <p className="text-start text-2xl ml-10 font-bold text-white mb-10">Hi, I&apos;m <span className="underline decoration-2 decoration-background">Steven Gutierrez</span></p>
         <h1 className="font-bold text-gray-200 text-5xl ">
           Software Developer
@@ -19,7 +19,7 @@ const Home = () => {
         </div>
       </header>
 
-      <section className="bg-gray-800 p-10 flex flex-col items-center mb-20 rounded-3xl lg:px-10">
+      <section  className="bg-gray-800 p-10 flex flex-col items-center mb-20 rounded-3xl lg:px-10">
         <HomeParagraph />
         
       </section>

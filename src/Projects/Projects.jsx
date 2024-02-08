@@ -18,20 +18,20 @@ const Projects = () => {
     ],
   },)
 
-  const [sectionStyle, setSectionStyle] = useState('z-10 transition-all ease-in-out delay-200 opacity-100 flex items-center justify-center')
-  const [displayStyle, setDisplayStyle] = useState(' -z-50 transition-all ease-in-out delay-300 opacity-0 -translate-y-[1000vh]')
+  const [displayStyle, setDisplayStyle] = useState(' -z-50 transition transition-all ease-in-out delay-200 duration-1000 opacity-0 -translate-y-[200vh]')
+  const [sectionStyle, setSectionStyle] = useState('z-10 transition transition-all ease-in-out delay-200 duration-1000 opacity-100 flex items-center justify-center')
 
   const cardStyle = 'w-[250px] h-[200px]'
 
   function handlePopup (project){
     setProjectInfo(project)
-    setDisplayStyle('z-20 transition-all ease-in-out delay-300 opacity-100 -translate-y-[90vh] sm:-translate-y-[85vh] md:-translate-y-[85vh] lg:-translate-y-[85vh]')
-    setSectionStyle('-z-50 transition-all ease-in-out delay-200 opacity-0 flex items-center justify-center')
+    setDisplayStyle('z-20 transition transition-all ease-in-out delay-200 duration-1000 opacity-100 -translate-y-[90vh] sm:-translate-y-[85vh] md:-translate-y-[85vh] lg:-translate-y-[85vh]')
+    setSectionStyle('-z-50 transition transition-all ease-in-out delay-200 duration-1000 opacity-0 flex items-center justify-center')
   }
 
   function handleBtn(){
-    setDisplayStyle('-z-50 -translate-y-[1000vh] transition-all ease-in-out delay-300 opacity-0')
-    setSectionStyle('z-10 transition-all ease-in-out delay-200 opacity-100 flex items-center justify-center')
+    setDisplayStyle('-z-50 transition transition-all ease-in-out delay-200 duration-1000 opacity-0 -translate-y-[200vh]')
+    setSectionStyle('z-10 transition transition-all ease-in-out delay-200 duration-1000 opacity-100 flex items-center justify-center')
   }
   return (
     <div id='projects' className="h-[120vh] md:h-[100vh] lg:pt-1 z-10">
