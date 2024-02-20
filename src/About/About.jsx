@@ -39,26 +39,25 @@ function About() {
     }  
     },[display])
 
-    
     return (
         <div id='about' className="p-3 text-white h-[100vh]">
         <div id="image flex" className="flex flex-wrap justify-center w-3/5 lg:w-full lg:mt-10 m-auto">
             <button id='btn' onClick={()=> handleImgClick('about')} className={imgStyle}>
-                <img src="/man.png" alt="avatar" />
-                <div className='z-20 -mt-16 font-bold border bg-color opacity-0 hover:opacity-100 hover:bg-color focus:bg-color transition-all ease-linear duration-0 hover:ease-out hover:duration-1000 hover:delay-100 delay-1000'>
-                    <p className=''>About me</p>
+                <img className='max-w-[25vw]' src="/WhiteMan.png" alt="avatar" />
+                <div className='z-20 -mt-16 font-bold border rounded-xl bg-white opacity-0 hover:opacity-100 hover:bg-white focus:bg-white transition-all ease-linear duration-0 hover:ease-out hover:duration-300 hover:delay-200 delay-200'>
+                    <p className='text-gray-700'>About me</p>
                 </div>
             </button>
             <button onClick={ ()=> handleImgClick('skills')} className={imgStyle}>
-                <img src="/web-programming.png" alt="code" />
-                <div className='z-20 -mt-16 font-bold border bg-color opacity-0 hover:opacity-100 hover:bg-color focus:bg-color transition-all ease-linear duration-0 hover:ease-out hover:duration-1000 hover:delay-100 delay-1000'>
-                    <p className=''>Skills</p>
+                <img className='max-w-[25vw]' src="/WhiteProgramming.png" alt="code" />
+                <div className='z-20 -mt-16 font-bold border rounded-xl bg-white opacity-0 hover:opacity-100 hover:bg-white focus:bg-white transition-all ease-linear duration-0 hover:ease-out hover:duration-300 hover:delay-200 delay-200'>
+                    <p className='text-gray-700'>Skills</p>
                 </div>
                 </button>
             <button onClick={ ()=> handleImgClick('education')} className={imgStyle}>
-                <img src="/Learning.png" alt="education" />
-                <div className='z-20 -mt-16 font-bold border bg-color opacity-0 hover:opacity-100 hover:bg-color focus:bg-color transition-all ease-linear duration-0 hover:ease-out hover:duration-1000 hover:delay-100 delay-1000'>
-                    <p className=''>Experience</p>
+                <img className='max-w-[25vw]' src="/WhiteLearning.png" alt="education" />
+                <div className='z-20 -mt-16 font-bold border rounded-xl bg-white opacity-0 hover:opacity-100 hover:bg-white focus:bg-white transition-all ease-linear duration-0 hover:ease-out hover:duration-300 hover:delay-200 delay-200'>
+                    <p className='text-gray-700'>Experience</p>
                 </div>
             </button>
         </div>

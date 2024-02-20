@@ -9,11 +9,12 @@ export default {
   theme: {
     theme: {
       fontFamily: {
-        poppins: ["Roboto Slab", "serif"],
+        k2d: ["K2D"],
       },
     },
     extend: {
       colors: {
+        blue: "#083248",
         cornflowerblue: "#6495ed",
         background: "#cfcece",
         purple: "#5c6bc0",
