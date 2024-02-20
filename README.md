@@ -33,6 +33,18 @@ Feel free to reach out to me through the following channels:
 
 ## Work Experience
 
+### Freelance Web Developer 
+
+- Client Communication: Interacting with clients to understand their requirements, discuss project scope, and provide updates on progress. Clear communication is key to ensure client satisfaction and project success.
+
+- Project Planning and Analysis: Analyzing client needs and project requirements to plan the development process effectively. This involves creating timelines, setting milestones, and determining the technologies and frameworks to be used.
+
+- Frontend Development: Building the user-facing side of websites or web applications using HTML, CSS, and JavaScript. Involves creating a responsive layout, implementing interactive features, and ensuring a seamless user experience across different devices and browsers.
+
+- Deployment and Maintenance: Deploying the finished project to a web server and ensuring its smooth operation. Involves setting up hosting environments, configuring domain settings, and performing routine maintenance tasks such as updates and backups.
+
+- Continuous Learning and Improvement: Staying up to date on the latest web development trends, tools, and technologies to continually improve my skills and deliver high-quality results to clients.
+  
 ### Merchant
 
 Costco Wholesale, Modesto | 2020 - Present
