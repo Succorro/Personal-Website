@@ -7,7 +7,7 @@ import About from './About/About';
 
 function App() {
   return (
-    <div className="w-full bg-blue font-k2d">
+    <div className="w-full bg-white font-k2d">
       <Nav />
       <Routes>
         <Route path="/about" element={<About />}/>

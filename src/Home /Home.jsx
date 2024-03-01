@@ -1,14 +1,38 @@
 import HomeParagraph from "./HomeParagraph";
+import {Link} from 'react-router-dom'
 const Home = () => {
   return (
-    <div id='home'   className="p-3 min-height-[100rem]">
+    <div id='home'   className="p-3 min-height-[100rem] text-slate-800">
+
+      <div className="flex-wrap justify-center content-center px-14 py-0 md:py-11 max-md:px-5">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+          <div className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
+           <div className="flex flex-col self-stretch my-auto text-xl font-semibold leading-8 max-w-[620px] text-slate-800 max-md:mt-10 max-md:max-w-full">
+              <h2 className="max-md:max-w-full">Technology | Web Development </h2>
+              <h1 className="mt-6 text-7xl max-md:max-w-full max-md:text-4xl">
+                Software Engineer
+              </h1>
+              <p className="mt-6 text-lg leading-7 max-md:max-w-full">
+                Hi I&apos;m <span className="font-bold text-xl text-purple">Steven Gutierrez,</span> 
+                <br />
+                I&apos;m a full-stack developer who enjoys turning ideas into reality through code.
+              </p>
+                <Link to='/contact' className=" rounded-xl mx-auto  justify-center items-center px-16 py-6 mt-12 max-w-full text-center text-white whitespace-nowrap bg-slate-800 w-[211px] max-md:px-5 max-md:mt-10">
+                  Contact
+                </Link>
+            </div>
+          </div>
+          <div className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+            <img
+              loading="lazy"
+              srcSet="/man.png"
+              className="grow w-full aspect-[1.33] max-w-[480px] max-md:mt-10 max-md:max-w-full"
+            />
+          </div>
+        </div>
+      </div>
+
       <header className="m-10" >
-        <p className="text-start text-2xl ml-10 font-bold text-white mb-10">Hi, I&apos;m <span className="underline decoration-2 decoration-background">Steven Gutierrez</span></p>
-        <h1 className="font-bold text-gray-200 text-5xl ">
-          Software Developer
-        </h1>
-        <p className="text-xl mt-10 font-bold text-white">I enjoy working on new and innovative technology. I am always learning and finding new ways to combine my passion and creativity with my code. </p>
-        <h1 className="text-center text-white font-bold text-3xl mt-10">Contact me:</h1>
         <div className="flex justify-center mb-10">
           <a className="m-10" href="https://www.linkedin.com/in/soysteven/" rel="noreferrer" target="_blank">
             <img className="w-10 h-10" src="/linkedin.svg" alt="LinkedIn" />
