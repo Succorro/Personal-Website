@@ -5,6 +5,7 @@ const initialState = {
   home: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100 underline decoration-2 decoration-background",
   about: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100",
   projects: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100",
+  contact: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100",
 };
 
 // eslint-disable-next-line react/prop-types
