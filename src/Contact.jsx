@@ -1,3 +1,4 @@
+import ContactForm from "./ContactForm"
 
 function Contact() {
   return (
@@ -29,6 +30,17 @@ function Contact() {
                 srcSet="..."
                 className="mt-11 w-full aspect-[1.61] max-md:mt-10"
               />
+            </div>
+          </div>
+          <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col grow font-bold max-md:mt-10 max-md:max-w-full">
+              <h1 className="text-5xl tracking-tight leading-[52.08px] text-violet-950 max-md:max-w-full">
+                Send Me A Message
+              </h1>
+              <div className="mt-10 text-base leading-7 text-slate-900 text-opacity-40 max-md:max-w-full">
+                I&apos;m always looking to collaborage on a great project.
+              </div>
+              <ContactForm/>
             </div>
           </div>
         </div>
