@@ -13,7 +13,7 @@ const Home = () => {
                 Software Engineer
               </h1>
               <p className="mt-6 text-lg leading-7 max-md:max-w-full">
-                Hi I&apos;m <span className="font-bold text-xl text-purple">Steven Gutierrez,</span> 
+                Hi I&apos;m <span className="font-bold text-2xl text-purple">Steven Gutierrez,</span> 
                 <br />
                 I&apos;m a full-stack developer who enjoys turning ideas into reality through code.
               </p>

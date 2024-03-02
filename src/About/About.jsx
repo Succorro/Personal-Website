@@ -43,19 +43,19 @@ function About() {
         <div id='about' className="p-3 text-white h-[100vh]">
         <div id="image flex" className="flex flex-wrap justify-center w-3/5 lg:w-full lg:mt-10 m-auto">
             <button id='btn' onClick={()=> handleImgClick('about')} className={imgStyle}>
-                <img className='max-w-[25vw]' src="/WhiteMan.png" alt="avatar" />
+                <img className='max-w-[25vw]' src="/man.png" alt="avatar" />
                 <div className='z-20 -mt-16 font-bold border rounded-xl bg-white opacity-0 hover:opacity-100 hover:bg-white focus:bg-white transition-all ease-linear duration-0 hover:ease-out hover:duration-300 hover:delay-200 delay-200'>
                     <p className='text-gray-700'>About me</p>
                 </div>
             </button>
             <button onClick={ ()=> handleImgClick('skills')} className={imgStyle}>
-                <img className='max-w-[25vw]' src="/WhiteProgramming.png" alt="code" />
+                <img className='max-w-[25vw]' src="/web-programming.png" alt="code" />
                 <div className='z-20 -mt-16 font-bold border rounded-xl bg-white opacity-0 hover:opacity-100 hover:bg-white focus:bg-white transition-all ease-linear duration-0 hover:ease-out hover:duration-300 hover:delay-200 delay-200'>
                     <p className='text-gray-700'>Skills</p>
                 </div>
                 </button>
             <button onClick={ ()=> handleImgClick('education')} className={imgStyle}>
-                <img className='max-w-[25vw]' src="/WhiteLearning.png" alt="education" />
+                <img className='max-w-[25vw]' src="/Learning.png" alt="education" />
                 <div className='z-20 -mt-16 font-bold border rounded-xl bg-white opacity-0 hover:opacity-100 hover:bg-white focus:bg-white transition-all ease-linear duration-0 hover:ease-out hover:duration-300 hover:delay-200 delay-200'>
                     <p className='text-gray-700'>Experience</p>
                 </div>
