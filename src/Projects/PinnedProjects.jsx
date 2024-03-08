@@ -1,26 +1,30 @@
-/* eslint-disable react/prop-types */
-import { Card,CardBody, Image } from '@nextui-org/react';
+import projectsData from "../projectsData"
 
-function PinnedProjects({project, cardStyle, handlePopup}) {
-    const {image, name} = project
+function PinnedProjects() {
   return (
-    <div className={cardStyle}>
-            <Card 
-            onClick={()=> handlePopup(project)}
-            isPressable 
-            className="w-full  bg-gray-200 hover:border-none hover:bg-gray-300  space-y-4 p-3">
-                <CardBody className='overflow-visible p-0'>
-                    <Image
-                    removeWrapper
-                    alt="Card background"
-                    className="max-h-[120px] w-full "
-                    src={image} 
-                    />
-                </CardBody>
-                
-                <h4 className="text-gray-600 font-bold text-lg">{name}</h4>
-            </Card>
-    </div>
+    
+        <div className="max-md:max-w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-md:flex-col max-md:gap-5">
+            {projectsData.map((project) => (
+              <div key={project.id} className="flex flex-col">
+                <div className="flex flex-col grow py-9 rounded-none border-2 border-gray-200 border-solid">
+                  <img src={project.image} alt="" className="object-cover w-full h-60 md:h-auto md:max-h-80" />
+                  <h1 className="text-2xl font-medium leading-8 text-slate-800">
+                    {project.name}
+                  </h1>
+                  <p className="mt-5 text-base leading-7 text-slate-900 text-opacity-40">
+                    {project.about}
+                  </p>
+                  <p className="mt-7 text-sm font-bold leading-7 text-indigo-600 uppercase tracking-[2px]">
+                    {project.technologies.map((tech, index) => (
+                      <span key={index}>{tech}</span>
+                    ))}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
   )
 }
 
