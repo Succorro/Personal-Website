@@ -1,6 +1,7 @@
 const projectsData = [
   {
     id: 1,
+    technologies: ["React"],
     name: "Rent A Bin",
     about: "Waste Management Container Rental Service",
     image: "/Rent.jpeg",
@@ -13,6 +14,7 @@ const projectsData = [
   },
   {
     id: 2,
+    technologies: ["React"],
     name: "Recipe Share",
     about:
       "A dynamic recipe sharing platform designed to connect food enthusiasts worldwide. Discover recipes tailored to your tastes. Engage, share experiences, tips, and culinary triumphs. Plan meals seamlessly. With Recipe Share, cooking becomes an enjoyable experience for novices and seasoned chefs alike.",
@@ -34,6 +36,7 @@ const projectsData = [
   },
   {
     id: 3,
+    technologies: ["React"],
     name: "Movie Review",
     about:
       "Your ultimate destination for movie reviews and recommendations. Dive into a vast collection of reviews from users, share your own insights, and connect with fellow movie buffs.",
@@ -51,6 +54,7 @@ const projectsData = [
   },
   {
     id: 4,
+    technologies: ["React"],
     name: "Hat Reviewer",
     about:
       "A go-to platform for reviewing hats. Explore an array of hat reviews, submit your own, and engage with a community of hat enthusiasts.",
@@ -68,6 +72,7 @@ const projectsData = [
   },
   {
     id: 5,
+    technologies: ["React"],
     name: "One Piece React",
     about:
       "Unravel the mysteries of the Grand Line and connect with the rich tapestry of characters in this beloved anime and manga series. Join us and embark on an adventure to uncover the treasures of the One Piece universe.",
@@ -81,6 +86,7 @@ const projectsData = [
   },
   {
     id: 6,
+    technologies: ["React"],
     name: "Brewery Finder",
     about:
       "Your ultimate destination for discovering the best breweries near you. Explore an extensive database of breweries, search by location or beer type, and uncover hidden gems.  With BrewFinder, navigating the world of craft beer has never been easier or more enjoyable. Join us and embark on a hop-filled journey to find your perfect pint.",
