@@ -2,7 +2,6 @@ import projectsData from "../projectsData"
 
 function PinnedProjects() {
   return (
-    
         <div className="max-md:max-w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-md:flex-col max-md:gap-5">
             {projectsData.map((project) => (
@@ -15,7 +14,7 @@ function PinnedProjects() {
                   <p className="mt-5 text-base leading-7 text-slate-900 text-opacity-40 px-1">
                     {project.about}
                   </p>
-                  <p className="mt-7 text-sm font-bold leading-7 text-indigo-600 uppercase tracking-[2px]">
+                  <p className="mt-7 text-sm px-5 font-bold leading-7 text-indigo-600 uppercase tracking-[2px]">
                     {project.technologies.map((tech, index) => (
                       <span key={index}>{tech}</span>
                     ))}

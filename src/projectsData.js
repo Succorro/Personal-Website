@@ -1,7 +1,7 @@
 const projectsData = [
   {
     id: 1,
-    technologies: ["React"],
+    technologies: ["React, ", "Firebase, ", "TailwindCSS"],
     name: "Rent A Bin",
     about: "Waste Management Container Rental Service",
     image: "/Rent.jpeg",
@@ -14,7 +14,7 @@ const projectsData = [
   },
   {
     id: 2,
-    technologies: ["React"],
+    technologies: ["React, ", "Ruby on Rails, ", "Tailwindcss, ", "Postgresql"],
     name: "Recipe Share",
     about:
       "A dynamic recipe sharing platform designed to connect food enthusiasts worldwide. Discover recipes tailored to your tastes. Engage, share experiences, tips, and culinary triumphs. Plan meals seamlessly. With Recipe Share, cooking becomes an enjoyable experience for novices and seasoned chefs alike.",
@@ -36,7 +36,12 @@ const projectsData = [
   },
   {
     id: 3,
-    technologies: ["React"],
+    technologies: [
+      "React, ",
+      "Ruby on Rails, ",
+      "postgresql, ",
+      "material ui, ",
+    ],
     name: "Movie Review",
     about:
       "Your ultimate destination for movie reviews and recommendations. Dive into a vast collection of reviews from users, share your own insights, and connect with fellow movie buffs.",
@@ -54,7 +59,7 @@ const projectsData = [
   },
   {
     id: 4,
-    technologies: ["React"],
+    technologies: ["React, ", "sinatra, ", "sqlite"],
     name: "Hat Reviewer",
     about:
       "A go-to platform for reviewing hats. Explore an array of hat reviews, submit your own, and engage with a community of hat enthusiasts.",
