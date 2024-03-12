@@ -2,9 +2,9 @@ import ContactForm from "./ContactForm"
 
 function Contact() {
   return (
-    <div className="flex justify-center items-center px-16 py-10 md:py-0 bg-white max-md:px-5">
-      <div className="mt-16 w-full max-w-[971px] max-md:mt-0 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:mx-10">
+    <div className="flex justify-center items-center px-16 md:py-0 bg-white max-md:px-5">
+      <div className="mt-5 w-full max-w-[971px] max-md:mt-0 max-md:max-w-full">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:mx-10 ">
           <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow max-md:mt-0">
               <h1 className="text-5xl font-bold tracking-tight whitespace-nowrap leading-[52.08px] text-slate-800">
@@ -27,8 +27,8 @@ function Contact() {
               </h1>
               <img
                 loading="lazy"
-                srcSet="..."
-                className="mt-11 w-full aspect-[1.61] max-md:mt-10"
+                srcSet="/Profile-Image.jpg"
+                className="mt-11 w-full object-cover h-96"
               />
             </div>
           </div>

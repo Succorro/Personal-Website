@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom'
 const Home = () => {
   return (
     <div id='home'   className="p-3 min-height-[100rem] text-slate-800">
-
-      <div className="flex-wrap justify-center content-center px-14 py-0 md:py-11 max-md:px-5">
+      <div className="flex-wrap justify-center content-center px-14 -mt-10 md:py-10 max-md:px-5">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <div className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
            <div className="flex flex-col self-stretch my-auto text-xl font-semibold leading-8 max-w-[620px] text-slate-800 max-md:mt-10 max-md:max-w-full">
@@ -25,8 +24,8 @@ const Home = () => {
           <div className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
             <img
               loading="lazy"
-              srcSet="/man.png"
-              className="grow w-full aspect-[1.33] max-w-[480px] max-md:mt-10 max-md:max-w-full"
+              srcSet="/Profile-Image.jpg"
+              className="w-full h-80 object-cover mt-10"
             />
           </div>
         </div>
