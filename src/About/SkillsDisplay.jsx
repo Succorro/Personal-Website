@@ -1,13 +1,18 @@
 import CardItem from "./CardItem";
 
- function SkillsDisplay() { 
-    const cardData = [ 
-        { icon: "", title: "", description: "", }, 
-        { icon: "", title: "", description: "", }, 
-        { icon: "", title: "", description: "", }, 
-        { icon: "", title: "", description: "", }, 
-        { icon: "", title: "", description: "", }, 
-        { icon: "", title: "", description: "", }, ];
+ function SkillsDisplay() {
+        const cardData = [
+          {
+            title: "React", 
+            icon: '/react.svg', 
+            description: 'JavaScript library that allows for an imperative approach to creating dynamic applications.'
+          },
+          {title: "JavaScript", icon: '/javascript.svg', description: ''},
+          {title: "Ruby", icon: '/ruby.svg', description: ''},
+          {title: "Ruby on Rails", icon: '/rails.svg', description: ''},
+          {title: "Tailwind CSS", icon: '/tailwind.svg', description: ''},
+          {title: "Redux", icon: '/redux.svg', description: ''}
+          ]
     return ( 
         
         <section className="flex justify-center items-center"> 
