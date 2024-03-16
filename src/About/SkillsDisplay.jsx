@@ -48,7 +48,7 @@ import CardItem from "./CardItem";
                 </div> 
                 <div className="mt-5 max-md:max-w-full"> 
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0"> 
-                        {cardData.slice(3).map((card, index) => ( <CardItem key={index} {...card} /> ))} 
+                        {cardData.slice(3, -1).map((card, index) => ( <CardItem key={index} {...card} /> ))} 
                     </div> 
                 </div> 
             </div> 

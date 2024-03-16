@@ -34,3 +34,19 @@
 .purple {
   color: #5c6bc0
 }
+
+#about-skill div {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0;
+  transition-delay: 200ms;
+  transition-timing-function: linear;
+}
+
+#about-skill:hover div {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-delay: 200ms;
+  transition-timing-function: ease-out;
+}
