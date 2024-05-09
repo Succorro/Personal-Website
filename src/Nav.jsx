@@ -2,10 +2,10 @@ import  { useState } from "react";
 import { Link } from "react-router-dom";
 
 const initialState = {
-  home: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100 underline decoration-2 decoration-background",
-  about: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100",
-  projects: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100",
-  contact: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100",
+  home: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-lg sm:text-xl font-bold transition-color duration-100 underline decoration-2 decoration-background",
+  about: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-lg sm:text-xl font-bold transition-color duration-100",
+  projects: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-lg sm:text-xl font-bold transition-color duration-100",
+  contact: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-lg sm:text-xl font-bold transition-color duration-100",
 };
 
 // eslint-disable-next-line react/prop-types
@@ -18,7 +18,7 @@ function Nav() {
       updatedState = {
         ...initialState, 
         [link]: initialState[link] + " underline decoration-2 decoration-background",
-        home: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl font-bold transition-color duration-100"
+        home: "text-slate-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-lg sm:text-xl font-bold transition-color duration-100"
       }
     } else {
       updatedState = {...initialState, [link]: initialState[link] + " underline decoration-2 decoration-background"}
@@ -27,10 +27,14 @@ function Nav() {
   } 
 
   return (
-    <nav className="pt-1 p-1 m-0">
-      <div className="px-2 sm:px-6 lg:px-8">
+    <nav className="">
+      <div className="px-2 sm:px-6 mx-10 lg:mx-20 border border-2 border-t-0 border-b-0 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+          <div className="hidden lg:flex lg:justify-center lg:items-center">
+            <img className="w-7 mr-5" src="/gmail.svg" alt="email" />
+            <p className="font-bold ">Stevengutierrez@gmail.com</p>
+          </div>
+          <div className="flex flex-1 items-center sm:items-stretch sm:justify-end">
             {Object.keys(state).map((key) => (
               <Link key={key} onClick={() => handleClick(key)} className={state[key]} to={key === 'home' ? '/' : `/${key.toLowerCase()}`}>
                 {key.charAt(0).toUpperCase() + key.slice(1)}
@@ -40,6 +44,7 @@ function Nav() {
           </div>
         </div>
       </div>
+      <div className="w-[100vw] border border-1"></div>
     </nav>
   );
 }

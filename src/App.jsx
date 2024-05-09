@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Home from './Home /Home';
 import Projects from './Projects/Projects';
 import About from './About/About';
-import Contact from './Contact';
+import Contact from './Contact/Contact';
 
 function App() {
   return (
