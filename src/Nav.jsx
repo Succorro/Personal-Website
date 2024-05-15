@@ -30,9 +30,11 @@ function Nav() {
     <nav className="">
       <div className="px-2 sm:px-6 mx-10 lg:mx-20 border border-2 border-t-0 border-b-0 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="hidden lg:flex lg:justify-center lg:items-center">
-            <img className="w-7 mr-5" src="/gmail.svg" alt="email" />
-            <p className="font-bold ">Stevengutierrez@gmail.com</p>
+          <div >
+            <a className="hidden lg:flex lg:justify-center lg:items-center hover:underline" href="mailto:stevengbmv@gmail.com">
+              <img className="w-7 mr-5" src="/gmail.svg" alt="email" />
+              <p className=" ">Stevengutierrez@gmail.com</p>
+            </a>
           </div>
           <div className="flex flex-1 items-center sm:items-stretch sm:justify-end">
             {Object.keys(state).map((key) => (

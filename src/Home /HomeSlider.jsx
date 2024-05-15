@@ -5,7 +5,7 @@ function HomeSlider() {
         const {source, style, alt, url} = slideInfo
         return (
             <swiper-slide key={index}>
-                <a  href={url} rel='noreferrer' target="_blank">
+                <a href={url} rel='noreferrer' target="_blank">
                     <img className={style} src={source} alt={alt} />
                 </a>
             </swiper-slide>

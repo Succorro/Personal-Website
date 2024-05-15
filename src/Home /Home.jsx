@@ -11,7 +11,7 @@ const Home = () => {
     }else if(key === 'back'){
       setDevImage('/CodeLaptop.jpg')
     }else {
-      setDevImage('/EditRentABin1.png')
+      setDevImage('/Rent.png')
     }
   }
 
