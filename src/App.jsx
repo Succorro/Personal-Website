@@ -5,6 +5,8 @@ import Home from './Home /Home';
 import Projects from './Projects/Projects';
 import About from './About/About';
 import Contact from './Contact/Contact';
+import {register } from 'swiper/element/bundle'
+register();
 
 function App() {
   return (

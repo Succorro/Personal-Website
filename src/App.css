@@ -50,3 +50,9 @@
   transition-delay: 200ms;
   transition-timing-function: ease-out;
 }
+
+.slider-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust this value as needed */
+  margin: 0 auto;
+}
