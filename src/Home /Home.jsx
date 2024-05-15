@@ -58,10 +58,7 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col md:flex-row border-b-2 items-center">
-        <div className="p-5">
-          <p className="text-xl font-bold">Technologies</p>
-        </div>
-        <div className="w-full border-t-2 md:border-t-0 md:border-l-2 p-5 ">
+        <div className="w-full  p-5 ">
             <HomeSlider />
         </div>
       </div>
@@ -69,15 +66,14 @@ const Home = () => {
       <div className='border-b-2 w-[100vw] -ml-10'>
         <div className='flex flex-col lg:flex-row'>
           <div className='ml-24 mt-20 lg:ml-32 lg:my-20 lg:w-[40vw]'>
-            <img className='w-[500px] lg:w-[30vw] max-h-[400px] object-cover object-center transition ease-in-out delay-1000' src={devImage} alt="" loading='lazy' />
+            <img className=' w-[400px] sm:w-[500px] lg:w-[30vw] sm:max-h-[400px] object-cover object-center transition ease-in-out delay-1000' src={devImage} alt="" loading='lazy' />
           </div>
           <div className='text-start text-xl font-bold leading-10 m-20 lg:ml-0 lg:my-20 lg:w-[40vw]'>
             <Accordion >
               <AccordionItem title="Front End" onPress={() => handleClick('front')}>
                 <li className='font-medium'>UX/UI Design</li>
                 <li className='font-medium'>Search Engine Optimization</li>
-                <li className='font-medium'>HTML/CSS</li>
-                <li className='font-medium'>React JS</li>
+                <li className='font-medium'>Modern Frameworks</li>
               </AccordionItem>
               <AccordionItem title="Back End" onPress={() => handleClick('back')}>
                 <li className='font-medium'>Ruby on Rails</li>
@@ -93,7 +89,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='h-10'></div>
+      <div className='h-10 pt-5 text-sm text-end pr-2'>Icons by <a className='underline' href="https://icons8.com/" rel='noreferrer' target='_blank'>Icons8</a></div>
     </div>
   );
 };
