@@ -7,11 +7,11 @@ const Home = () => {
 
   function changeImage (key) {
     if(key === 'front'){
-      setDevImage('/Wireframe.jpg')
+      setDevImage('/laptop.svg')
     }else if(key === 'back'){
-      setDevImage('/CodeLaptop.jpg')
+      setDevImage('/backend.svg')
     }else {
-      setDevImage('/Rent.png')
+      setDevImage('/iphone.svg')
     }
   }
 
@@ -66,7 +66,7 @@ const Home = () => {
       <div className='border-b-2 w-[100vw] -ml-10'>
         <div className='flex flex-col lg:flex-row'>
           <div className='ml-24 mt-20 lg:ml-32 lg:my-20 lg:w-[40vw]'>
-            <img className=' w-[400px] sm:w-[500px] lg:w-[30vw] sm:max-h-[400px] object-cover object-center transition ease-in-out delay-1000' src={devImage} alt="" loading='lazy' />
+            <img className='ml-20 w-[200px] sm:w-[300px] lg:w-[20vw] sm:max-h-[300px] object-contain object-center transition ease-in-out delay-1000' src={devImage} alt="" loading='lazy' />
           </div>
           <div className='text-start text-xl font-bold leading-10 m-20 lg:ml-0 lg:my-20 lg:w-[40vw]'>
             <Accordion >
