@@ -3,15 +3,15 @@ import { useState } from 'react';
 import {Accordion, AccordionItem} from "@nextui-org/accordion";
 import HomeSlider from './HomeSlider';
 const Home = () => {
-  const [devImage, setDevImage] = useState("/Wireframe.jpg")
+  const [devImage, setDevImage] = useState("/laptopP.png")
 
   function changeImage (key) {
     if(key === 'front'){
-      setDevImage('/laptop.svg')
+      setDevImage('/laptopP.png')
     }else if(key === 'back'){
-      setDevImage('/backend.svg')
+      setDevImage('/serverP.png')
     }else {
-      setDevImage('/iphone.svg')
+      setDevImage('/phoneP.png')
     }
   }
 
@@ -34,7 +34,7 @@ const Home = () => {
                 <br />
                 I&apos;m a full-stack developer who enjoys turning ideas into reality through code. Reach out if you&apos;re looking to collaborate or to have a conversation.
               </p>
-                <Link to='/contact' className="rounded-3xl mx-auto justify-center items-center py-6 mt-12 max-w-full text-center text-white whitespace-nowrap bg-slate-800 w-[211px] max-md:px-5 max-md:mt-10">
+                <Link to='/contact' className=" hover:underline hover:underline-white rounded-3xl mx-auto justify-center items-center py-6 mt-12 max-w-full text-center text-white whitespace-nowrap bg-slate-800 w-[211px] max-md:px-5 max-md:mt-10">
                   Connect With Me
                 </Link>
             </div>
