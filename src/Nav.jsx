@@ -33,7 +33,7 @@ function Nav() {
           <div >
             <a className="hidden lg:flex lg:justify-center lg:items-center hover:underline" href="mailto:stevengbmv@gmail.com">
               <img className="w-7 mr-5" src="/gmail.svg" alt="email" />
-              <p className=" ">Stevengutierrez@gmail.com</p>
+              <p className="underline">Stevengutierrez@gmail.com</p>
             </a>
           </div>
           <div className="flex flex-1 items-center sm:items-stretch sm:justify-end">
