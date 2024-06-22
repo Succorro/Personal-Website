@@ -1,24 +1,6 @@
-import {Link} from 'react-router-dom'
-import { useState } from 'react';
 import {Accordion, AccordionItem} from "@nextui-org/accordion";
 import HomeSlider from './HomeSlider';
 const Home = () => {
-  const [devImage, setDevImage] = useState("/laptopP.png")
-
-  function changeImage (key) {
-    if(key === 'front'){
-      setDevImage('/laptopP.png')
-    }else if(key === 'back'){
-      setDevImage('/serverP.png')
-    }else {
-      setDevImage('/phoneP.png')
-    }
-  }
-
-  function handleClick(key) {
-    changeImage(key)
-  }
-
   return (
     <div id='home'   className="mx-10 lg:mx-20 border border-2 border-t-0 border-b-0 min-height-[100rem] text-slate-800">
       <div className="flex-wrap justify-center content-center ">
@@ -34,9 +16,10 @@ const Home = () => {
                 <br />
                 I&apos;m a full-stack developer who enjoys turning ideas into reality through code. Reach out if you&apos;re looking to collaborate or to have a conversation.
               </p>
-                <Link to='/contact' className=" hover:underline hover:underline-white rounded-3xl mx-auto justify-center items-center py-6 mt-12 max-w-full text-center text-white whitespace-nowrap bg-slate-800 w-[211px] max-md:px-5 max-md:mt-10">
-                  Connect With Me
-                </Link>
+              <a className=" hover:underline hover:underline-white rounded-3xl mx-auto justify-center items-center py-6 mt-12 max-w-full text-center text-white whitespace-nowrap bg-slate-800 w-[211px] max-md:px-5 max-md:mt-10" href="mailto:stevengbmv@gmail.com">
+                  Connect
+              </a>
+                
             </div>
           </div>
           <div className="flex flex-col w-full lg:w-[50%] border-b-2 px-10">
@@ -52,6 +35,9 @@ const Home = () => {
               <a className="m-10" href="mailto:stevengbmv@gmail.com">
                 <img className="w-12 h-10" src="/gmail.svg" alt="Email" loading='lazy'/>
               </a>
+              <a className="m-10" href="https://github.com/Succorro" rel="noreferrer" target="_blank">
+                <img className="w-12 h-10" src="/github.svg" alt="Github" loading='lazy'/>
+              </a>
             </div>
           </div>
         </div>
@@ -65,22 +51,19 @@ const Home = () => {
 
       <div className='border-b-2 w-[100vw] -ml-10'>
         <div className='flex flex-col lg:flex-row'>
-          <div className='ml-24 mt-20 lg:ml-32 lg:my-20 lg:w-[40vw]'>
-            <img className='ml-20 w-[200px] sm:w-[300px] lg:w-[20vw] sm:max-h-[300px] object-contain object-center transition ease-in-out delay-1000' src={devImage} alt="" loading='lazy' />
-          </div>
           <div className='text-start text-xl font-bold leading-10 m-20 lg:ml-0 lg:my-20 lg:w-[40vw]'>
             <Accordion >
-              <AccordionItem title="Front End" onPress={() => handleClick('front')}>
+              <AccordionItem title="Front End" >
                 <li className='font-medium'>UX/UI Design</li>
                 <li className='font-medium'>Search Engine Optimization</li>
                 <li className='font-medium'>Modern Frameworks</li>
               </AccordionItem>
-              <AccordionItem title="Back End" onPress={() => handleClick('back')}>
+              <AccordionItem title="Back End">
                 <li className='font-medium'>Ruby on Rails</li>
                 <li className='font-medium'>Relational Database Integration</li>
                 <li className='font-medium'>API Development</li>
               </AccordionItem>
-              <AccordionItem title="Mobile Development" onPress={() => handleClick('mobile')}>
+              <AccordionItem title="Mobile Development">
               <li className='font-medium'>Responsive Design</li>
               <li className='font-medium'>React Native</li>
               <li className='font-medium'>Expo</li>
