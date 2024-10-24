@@ -1,24 +1,46 @@
-import './App.css'
-import { Routes, Route } from "react-router-dom";
-import Nav from './Nav';
-import Home from './Home /Home';
-import Projects from './Projects/Projects';
-import About from './About/About';
-import {register } from 'swiper/element/bundle'
-register();
+import React, { useEffect, useState } from 'react';
+import { Box } from 'lucide-react';
 
-function App() {
+const RedirectPage = () => {
+  const [countdown, setCountdown] = useState(5);
+
+  useEffect(() => {
+    if (countdown === 0) {
+      window.location.href = 'https://stevengutierrez.pages.dev';
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setCountdown((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [countdown]);
+
   return (
-    <div className="w-full bg-white font-k2d">
-      <Nav />
-      <Routes>
-        <Route path="/about" element={<About />}/>
-        <Route path="/projects" element={<Projects />}/>
-        <Route path="/" element={<Home />}/>
-      </Routes>
-      
-    </div>
-  )
-}
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-4">
+      <div className="text-center">
+        <div className="mb-6 animate-bounce">
+          <Box size={64} className="text-indigo-600" />
+        </div>
 
-export default App
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          This Page Has Moved
+        </h1>
+
+        <p className="text-gray-600 mb-8">
+          You'll be automatically redirected in {countdown} second{countdown !== 1 ? 's' : ''}...
+        </p>
+
+        <a
+          href="https://stevengutierrez.pages.dev"
+          className="inline-flex items-center px-6 py-3 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors duration-200"
+        >
+          Go there now
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default RedirectPage;
